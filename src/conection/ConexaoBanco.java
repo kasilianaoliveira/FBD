@@ -20,9 +20,8 @@ public class ConexaoBanco {
     public Statement stm; //realizar pesquisa no bd
     public ResultSet rs; //armazenar resultado da pesquisa
     private final String driver = "org.postgresql.Driver"; //servico de banco
-    private final String caminho = "jdbc:postgresql://localhost:5432/medclin"; //onde ta alocado
+    private final String caminho = "jdbc:postgresql://localhost:/medclin"; //onde ta alocado
     private final String usuario = "postgres"; //postgres
-    private final String senha = "28031970"; //senha do post
     public Connection conn; //conexao com o banco
     
     public void conexao(){ //conectar com o banco
